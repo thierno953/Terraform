@@ -4,7 +4,7 @@ provider "aws" {
    secret_key = "my-secret-key"
 }
 
-resource "aws_instance" "ec2_exemple" {
+resource "aws_instance" "ec2_example" {
   ami           = "ami-xxxxxxxxxxxxxxxxx"
   instance_type = "t2.micro"                  
 
