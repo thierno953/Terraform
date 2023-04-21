@@ -1,8 +1,8 @@
 # Terraform
 
-- Is an open source "Infrastructure as Code" tool, created by HashiCorp.
-- A "declarative" coding tool, Terraform enables developers to use a high-level configuration language called HCL (HashiCorp Configuration Language) to describe the desired "end-state" cloud or on-premise infrastructure for running an application.
-- It then generates a plan for reaching that end-state and executes the plan to provision the infrastructure.
+* Is an open source **Infrastructure as Code** tool, created by **HashiCorp**.
+* A "declarative" coding tool, Terraform enables developers to use a high-level configuration language called **HCL** (HashiCorp Configuration Language) to describe the desired "end-state" cloud or on-premise infrastructure for running an application.
+* It then generates a plan for reaching that end-state and executes the plan to provision the infrastructure.
 
 ```bash
 provider "google" {
@@ -14,16 +14,16 @@ provider "google" {
 
 ## Advantages
 
-- Terraform can manage infrastucture on multiple cloud platforms.
-- The human-readable configuration language helps you write infrastructure code easily.
-- Terraform's state allows you to track the resource changes throughout your deployments.
-- You can commit your configurations to version control to safely collaborate on infrastructure.
+* Terraform can manage infrastucture on multiple cloud platforms.
+* The human-readable configuration language helps you write infrastructure code easily.
+* Terraform's state allows you to track the resource changes throughout your deployments.
+* You can commit your configurations to version control to safely collaborate on infrastructure.
 
 ## Terraform workflow
 
-- Terraform core workflow consists of lifecycle stages that can be used to manage the resources created on various platform.
-- This Terraform core workflow consists of stages **init**, **validate**, **plan**, **plan**, **show** and **destroy**.
-- The stages are executed as commands to perform the respective operations expected by them.
+* Terraform core workflow consists of lifecycle stages that can be used to manage the resources created on various platform.
+* This Terraform core workflow consists of stages **init**, **validate**, **plan**, **plan**, **show** and **destroy**.
+* The stages are executed as commands to perform the respective operations expected by them.
 
 ```bash
 #The terraform init command initializes a working directory containing Terraform configuration files.
