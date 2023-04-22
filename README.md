@@ -5,10 +5,9 @@
 * It then generates a plan for reaching that end-state and executes the plan to provision the infrastructure.
 
 ```bash
-provider "google" {
+provider "aws" {
     project = "{{YOUR GCP PROJECT}}"
-    region  = "europe-west3"
-    zone    = "europe-west3-c"
+    region  = "eu-west-3"
 }
 ```
 
