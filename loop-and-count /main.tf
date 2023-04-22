@@ -68,7 +68,7 @@ output "my_console_output" {
   sensitive    = true
 }
 
-// ========================== // for_each 2
+// ========================== // loop
 
 provider "aws" {
   region     = "eu-west-3"
