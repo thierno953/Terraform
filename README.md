@@ -6,8 +6,8 @@
 
 ```bash
 provider "aws" {
-    project = "{{YOUR GCP PROJECT}}"
-    region  = "eu-west-3"
+  project = "{{YOUR GCP PROJECT}}"
+  region  = "eu-west-3"
 }
 ```
 
