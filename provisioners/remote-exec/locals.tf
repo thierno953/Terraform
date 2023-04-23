@@ -1,6 +1,6 @@
 locals {
   common_tags = {
-    Name    = "File_provisioner_example"
-    Project = "File_provisioner_project"
+    Name    = "remote-exec_provisioner_example"
+    Project = "remote-exec_provisioner_project"
   }
 }
