@@ -14,7 +14,7 @@ resource "aws_instance" "replace_example_two" {
 
 # Syntax : terraform taint [options] <address>
 
-# example command :  terraform taint aws_instance.taint_example_two
+# example command :  terraform taint aws_instance.replace_example_two
 
 # example alternative :  terraform apply --replace="aws_instance.replace_example_one"
 
