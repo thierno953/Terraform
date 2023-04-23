@@ -1,0 +1,6 @@
+name           = "Terraform-created-resources"
+image_id       = "ami-xxxxxxxxxxxxxxxxx"
+instance_type  = "t2.micro"
+instance_count = 2
+region         = "eu-west-3"
+key_name       = "linux-server-ubuntu"
