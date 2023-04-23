@@ -1,11 +1,11 @@
-resource "aws_instance" "taint_example_one" {
+resource "aws_instance" "replace_example_one" {
   ami           = var.ec2_image_one
   instance_type = var.ec2_instance_type
   
   tags          = local.common_tags
 }
 
-resource "aws_instance" "taint_example_two" {
+resource "aws_instance" "replace_example_two" {
   ami           = var.ec2_image_two
   instance_type = var.ec2_instance_type
   
@@ -16,4 +16,5 @@ resource "aws_instance" "taint_example_two" {
 
 # example command :  terraform taint aws_instance.taint_example_two
 
-# terraform apply -auto-approve
+# example alternative :  terraform apply --replace="aws_instance.replace_example_one"
+
