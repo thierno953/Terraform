@@ -1,0 +1,11 @@
+ec2_instance_type = "t2.micro"
+ec2_image         = "ami-xxxxxxxxxxxxxxxxx"
+ec2_region        = "eu-west-3"
+db_engine         = "mysql"
+db_instance_type  = "db.t2.micro"
+db_storage        = 10
+db_name           = "depends_on_example"
+db_username       = "db_username"
+db_password       = "db_password"
+skip_snapshot     = true
+s3_bucket_name    = "dgruploads-depends-on-example"
