@@ -16,7 +16,7 @@ locals {
   }
 }
 
-resource "aws_instance" "local_example" {  
+resource "aws_instance" "locals_example" {  
   instance_type = "t2.micro"    
   ami           = "ami-xxxxxxxxxxxxxxx"
 
