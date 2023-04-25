@@ -4,10 +4,10 @@ resource "aws_instance" "local_exec_example" {
   tags          = local.common_tags
 
   provisioner "local-exec" {
-    command = "echo self.private_ip >> private_IPs.txt"
+    command = "echo ${self.private_ip} >> private_IPs.txt"
   }
 
   provisioner "local-exec" {
-    command = "echo self.public_ip >> public_IPs.txt"
+    command = "echo ${self.public_ip} >> public_IPs.txt"
   }
 }
