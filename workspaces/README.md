@@ -3,7 +3,7 @@
 ```bash
 terraform workspace <subcommand> [options] [args]
 
-terraform workspace list [DIR]
+terraform workspace list 
 
 terraform workspace new [DIR]
 
