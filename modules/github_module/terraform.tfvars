@@ -1,0 +1,5 @@
+ec2_instance_type   = "t2.micro"
+ec2_image           = "ami-xxxxxxxxxxxxxxxxx"
+ec2_region          = "eu-west-3"
+s3_bucket_name      = "dgruploads-module-example"
+ec2_vpc_id          = "vpc-xxxxxxxxxxxxxxxxx"
