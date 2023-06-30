@@ -1,0 +1,5 @@
+ec2_instance_type   = "t2.micro"
+ec2_image           = "ami-05b5a865c3579bbc4"
+ec2_region          = "eu-west-3"
+s3_bucket_name      = "thiernos-module-example"
+ec2_vpc_id          = "vpc-0a883e8a82ab238d3"
