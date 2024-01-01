@@ -9,7 +9,7 @@ terraform {
 }
 
 module "tmbVPC" {
-  source = "./modules/vpc"
+  source = "./modules/vpc.tf"
 
   vpc_cidr             = local.vpc_cidr
   vpc_tags             = var.vpc_tags
