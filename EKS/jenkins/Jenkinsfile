@@ -1,0 +1,54 @@
+pipeline {
+    agent any
+    environment {
+        AWS_ACCESS_KEY_ID = credentials('aws_access_key_id')
+        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key')
+        AWS_DEFAULT_REGION = 'eu-west-3'
+    }
+    stages{
+        stage('Checkout SCM'){
+            steps{
+                script{
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/thierno953/Terraform.git']])
+                }
+            }
+        }
+        stage('Initializing Terraform'){
+            steps{
+                script{
+                    dir('terraform'){
+                         sh 'terraform init'
+                    }
+                }
+            }
+        }
+        stage('Validating Terraform'){
+            steps{
+                script{
+                    dir('terraform'){
+                         sh 'terraform validate'
+                    }
+                }
+            }
+        }
+        stage('Previewing the infrastructure'){
+            steps{
+                script{
+                    dir('terraform'){
+                         sh 'terraform plan'
+                    }
+                    input(message: "Approve?", ok: "proceed")
+                }
+            }
+        }
+        stage('Create/Destroy an EKS cluster'){
+            steps{
+                script{
+                    dir('terraform'){
+                         sh 'terraform $action --auto-approve'
+                    }
+                }
+            }
+        }
+    }
+}
