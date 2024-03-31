@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     dir('kubernetes') {
-                        sh "aws eks update-kubeconfig --name tfcloud-cluster"
+                        sh "aws eks update-kubeconfig --name pc-eks"
                         sh "kubectl apply -f deployment.yaml"
                         sh "kubectl apply -f service.yaml"
                     }
