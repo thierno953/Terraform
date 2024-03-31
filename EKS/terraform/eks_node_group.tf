@@ -7,7 +7,7 @@ resource "aws_instance" "kubectl-server" {
   vpc_security_group_ids      = [aws_security_group.allow_tls.id]
 
   tags = {
-    Name = "kubectl"
+    Name = "kubectl" 
   }
 
 }
